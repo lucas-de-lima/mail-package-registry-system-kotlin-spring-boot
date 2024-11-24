@@ -1,11 +1,11 @@
-package com.lucasdelima.mail_package_registry_system
+package com.lucasdelima.registry
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class MailPackageRegistrySystemApplication
+class RegistryApplication
 
 fun main(args: Array<String>) {
-	runApplication<MailPackageRegistrySystemApplication>(*args)
+	runApplication<RegistryApplication>(*args)
 }

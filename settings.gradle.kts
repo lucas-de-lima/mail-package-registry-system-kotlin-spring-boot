@@ -1,1 +1,1 @@
-rootProject.name = "mail-package-registry-system"
+rootProject.name = "registry"

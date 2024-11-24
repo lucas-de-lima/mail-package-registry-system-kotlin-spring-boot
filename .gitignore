@@ -5,6 +5,9 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+/logs
+/logs                                         # Pasta para os arquivos de log
+
 ### STS ###
 .apt_generated
 .classpath
