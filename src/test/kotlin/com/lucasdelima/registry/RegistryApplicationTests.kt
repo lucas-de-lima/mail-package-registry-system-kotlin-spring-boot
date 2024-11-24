@@ -1,10 +1,10 @@
-package com.lucasdelima.mail_package_registry_system
+package com.lucasdelima.registry
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class MailPackageRegistrySystemApplicationTests {
+class RegistryApplicationTests {
 
 	@Test
 	fun contextLoads() {

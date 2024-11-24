@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: 'postgres:17.2-alpine'
+    container_name: 'postgres_container'
+    environment:
+      - 'POSTGRES_DB=registry_db'
+      - 'POSTGRES_PASSWORD=postgres_password'
+      - 'POSTGRES_USER=postgres_user'
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  rabbitmq:
+    image: 'rabbitmq:latest'
+    environment:
+      - 'RABBITMQ_DEFAULT_PASS=secret'
+      - 'RABBITMQ_DEFAULT_USER=myuser'
+    ports:
+      - '5672'
+volumes:
+  pgdata:
